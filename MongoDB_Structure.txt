@@ -1,0 +1,56 @@
+DB_Name = 'Attendance'
+
+Collections:
+
+1. Attendance.faculty_course:
+{
+  "email": "guru@gmail.com",
+  "regid": "CB.EN.FAC.CSE122",
+  "course_handled": ["19CSE401", "19CSE463"]
+}
+
+2. Attendance.faculty_tt
+{
+  "day": "Thursday",
+  "tt": {
+    "19CSE401": ["slot1"],
+    "19CSE463": ["slot3", "slot8"]
+  },
+  "email": "guru@gmail.com"
+}
+
+3. Attendance.locations
+{
+  "block": "gb",
+  "coords": [
+    [
+      { "$numberDouble": "10.9032551" },
+      { "$numberDouble": "76.8968108" }
+    ],
+    [
+      { "$numberDouble": "10.903241" },
+      { "$numberDouble": "76.8975608" }
+    ],
+    [
+      { "$numberDouble": "10.9024591" },
+      { "$numberDouble": "76.8975682" }
+    ],
+    [
+      { "$numberDouble": "10.9024739" },
+      { "$numberDouble": "76.8968286" }
+    ]
+  ]
+}
+
+4. Attendance.student_course
+{
+  "semester": {
+    "5": ["19CSE310"],
+    "7": ["19CSE401", "19CSE463"]
+  },
+  "email": "mukuntan@gmail.com"
+}
+
+
+Build the project using the following command:
+eas build -p android --profile preview
